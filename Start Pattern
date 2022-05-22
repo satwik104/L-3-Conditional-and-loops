@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main(){
+    //we will be using the breaking triangles approach 
+  int i,j,k,x,n;
+      cin>>n;
+    for(i=1;i<=n;i++)
+    {
+        //printing the space triangle part
+        for(k=1;k<=(n-i);k++)
+            cout<<" ";
+        //printing the left triangle part
+        for(j=1;j<=i;j++)
+            cout<<"*";
+        //printing the right triangle part
+        for(x=1;x<=i-1;x++)//for(x=2;x<=i;x++)
+            cout<<"*";
+        //changing the row for printinhg the parts of another triangle
+        cout<<endl;
+    }
+    return 0;
+}
